@@ -1,5 +1,5 @@
-no = raw_input()
-arr = raw_input().split()[:int(no)]
+no = input()
+arr = raw_input().split()[:no]
 arr = map(int,arr)
 count = []
 while(len(arr)!=0):
