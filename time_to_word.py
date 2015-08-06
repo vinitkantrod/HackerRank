@@ -1,7 +1,3 @@
-
-H = int(raw_input())
-M = int(raw_input())
-
 def word(x):
     unit = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
     dec = ["", "ten", "twenty", "thirty", "forty", "fifty"]
@@ -13,6 +9,9 @@ def minu(x):
     w = word(x)
     if x == 1: return w + " minute"
     else: return w + " minutes"
+
+H = int(raw_input())
+M = int(raw_input())
 
 if M == 0:
     print "{} o' clock".format(word(H))
